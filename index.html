@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenline Bus</title>
+    <link rel="stylesheet" href="bus.css".css>
+
+     <!-- tailwind and daisy UI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- tailwind custom color -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#1DD100',
+              }
+            }
+          }
+        }
+    </script>
+       <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="container mx auto p-10 lg:px-24 px-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-2xl font-bold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 ">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end ">
+                    <div>
+                        <button class="btn btn-success text-primary-color bg-green-100">Bus
+                        <img src="images/bus-icon.png">  
+                        </button>
+                    </div>
+                </div>
+              </div>
+        </nav>
+    </header> 
+       <!-- banner section -->
+    <main>
+        <section class="container mx auto p-10 lg:px-24 px-8">
+            <div class="relative">
+                <div class="hero min-h-screen rounded-3xl" style="background-image:url( ../images/banner.png);">
+                    <div class="hero-overlay rounded-3xl bg-opacity-60"></div>
+                    <div class="hero-content text-center mb-48 text-neutral-content">
+                      <div class="">
+                        <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with</h1>
+                        <h1 class="mb-5 text-5xl text-primary-color font-bold">Greenline Paribahan</h1>
+                        <p class="mb-5">Traveling is an exciting thing for lots of people. <br> I love to travel a lot. Here are a few short and long essays on Travelling. <br> You should share these essays with your children. They should learn.</p>
+                        <button class="btn btn-success text-black bg-primary-color font-bold pr-8 pl-8">Buy Tickets</button>
+                      </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex ml-40 text-black rounded-box lg:h-25 w-2/3 mx-auto -translate-y-24 mr-8 p-5"">
+                        <div class="flex justify-between bg-white border-2 border-b-primary-color mr-5 rounded-xl text-black w-64 h-28 pt-6 pl-8">
+                          <div>
+                            <img src="images/people.png" alt="">
+                          </div>
+                          <div class="pr-8 font-semibold">
+                            <h1>500K+</h1>
+                            <p>Registered users</p>
+                          </div>
+                        </div>
+                        <div class="flex justify-between bg-white border-2 border-b-primary-color mr-5 rounded-xl text-black w-64  h-28 pt-6 pl-8"> 
+                            <div>
+                              <img src="images/ticket-cupon.png" alt="">
+                            </div>
+                            <div class="pr-8 font-semibold">
+                              <h1>1.7 lacks</h1>
+                              <p >Tickets sold</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between bg-white border-2 border-b-primary-color rounded-xl text-black w-64  h-28 pt-6 pl-8">
+                            <div>
+                              <img src="images/stoppage.png" alt="">
+                            </div>
+                            <div class="pr-8 font-semibold">
+                              <h1>80K+</h1>
+                              <p>rental partners</p>
+                            </div>
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- new section  -->
+        <section class="container mx auto p-10 lg:px-24 px-8">
+            <div class="text-center mb-5 text-2xl font-bold">
+                <h1>Best offer for you</h1>
+            </div>
+            <div class="flex justify-between">
+                <div class="flex w-5/12">
+                    <div class="bg-yellow-400 w-auto pt-24 pl-24 pr-4 rounded-l-xl">
+                        <h3 class="text-xl text-bold">15% OFF</h3>
+                        <h5>On your next purchase</h5>
+                        <p>use by january 2024</p>
+                    </div>
+                    <img class="bg-yellow-400" src="images/cupon-devider.png" alt="">
+                    <div class="bg-yellow-400 w-5/12 p-24 rounded-r-xl">
+                        <h3>NEW15</h3>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex w-5/12">
+                    <div class="bg-red-300 w-5/12 p-24 rounded-l-xl text-center">
+                        <h3>15% OFF</h3>
+                    </div>
+                    <img class="bg-red-300" src="images/cupon-devider.png" alt="">
+                    <div class="bg-red-300 w-5/12 p-24 rounded-r-xl text-center ">
+                        <h3>NEW15</h3>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
